@@ -1,0 +1,25 @@
+.nameUndangan {
+  font-family: "Playball", cursive;
+}
+
+.desc1 {
+  font-family: "Nunito", sans-serif;
+}
+
+.desc2 {
+  font-family: "Nunito", sans-serif;
+}
+
+.btn-undangan {
+  border: none;
+}
+
+.descButton {
+  background-color: white;
+  /* margin-left: 10.5rem;
+  margin-right: 10.5rem; */
+}
+
+.modal-content {
+  background-color: #11223c;
+}

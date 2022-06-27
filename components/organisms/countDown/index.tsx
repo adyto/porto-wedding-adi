@@ -58,24 +58,23 @@ export default function countDown() {
             </div>
           </div>
 
-          <div className="col-sm-2"></div>
-          <div className="col-sm-8">
+          <div className="justify-content-center">
             <div className="remaining-time">
               {isExpired ? (
                 <div> yay...</div>
               ) : (
                 <div id="clock">
                   <div className="time-sec">
-                    <span className="title">{days}</span> Days{" "}
+                    <span className="title">{days}</span> Days
                   </div>
                   <div className="time-sec">
-                    <span className="title">{hours}</span> Hours{" "}
+                    <span className="title">{hours}</span> Hours
                   </div>
                   <div className="time-sec">
-                    <span className="title">{minutes}</span> Minutes{" "}
+                    <span className="title">{minutes}</span> Minutes
                   </div>
                   <div className="time-sec">
-                    <span className="title">{seconds}</span> Seconds{" "}
+                    <span className="title">{seconds}</span> Seconds
                   </div>
                 </div>
               )}

@@ -12,14 +12,11 @@ export default function Keterangan() {
                 untukmu isteri-isteri dari jenismu sendiri, supaya kamu
                 cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya
                 diantaramu rasa kasih dan sayang. Sesugguhnya pada yang demikian
-                itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.{" "}
+                itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.
               </span>
               <p className="about__me-p">(QS. Ar-Rum (30): 21)</p>
             </div>
           </div>
-
-          <div className="col-sm-2"></div>
-          <div className="col-sm-8"></div>
         </div>
       </div>
     </section>

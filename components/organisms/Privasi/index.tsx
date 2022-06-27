@@ -1,6 +1,6 @@
 import React from "react";
-import aman from "../../../public/img/keamanan.png";
 import Image from "next/image";
+import aman from "../../../public/img/keamanan.png";
 
 export default function Privasi() {
   return (

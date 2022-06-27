@@ -1,8 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import bri from "../../../public/img/bri.jpg";
 import gopay from "../../../public/img/gopay.jpeg";
 import dana from "../../../public/img/dana.jpeg";
-import Image from "next/image";
 
 export default function Amplop() {
   return (

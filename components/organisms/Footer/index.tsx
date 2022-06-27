@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer__copyright">
           <h4>&copy; By Dewi & Adi</h4>
         </div>
-        <a href="#" className="footer__logo">
+        <a href="/#" className="footer__logo">
           Powered by Digital Trias Zaen Mutaqin
         </a>
         <div className="footer__socials">

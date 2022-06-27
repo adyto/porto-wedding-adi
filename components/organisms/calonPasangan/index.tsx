@@ -1,8 +1,8 @@
 import React from "react";
 import { FiInstagram } from "react-icons/fi";
+import Image from "next/image";
 import foto1 from "../../../public/img/AYXE0057.jpg";
 import foto2 from "../../../public/img/MempelaiPria.jpg";
-import Image from "next/image";
 
 export default function CalonPasangan() {
   return (
@@ -10,13 +10,7 @@ export default function CalonPasangan() {
       <div className="row mt-5">
         <div className="col">
           <div className="d-flex justify-content-end">
-            <Image
-              src={foto2}
-              className="img-fluid"
-              width={200}
-              max-width={"400px"}
-              height={360}
-            />
+            <Image src={foto2} className="img-fluid" width={200} height={360} />
           </div>
         </div>
         <div className="col">
@@ -42,13 +36,7 @@ export default function CalonPasangan() {
       <div className="row mt-5">
         <div className="col">
           <div className="d-flex justify-content-end">
-            <Image
-              src={foto1}
-              className="img-fluid"
-              width={200}
-              max-width={"400px"}
-              height={360}
-            />
+            <Image src={foto1} className="img-fluid" width={200} height={360} />
           </div>
         </div>
         <div className="col">

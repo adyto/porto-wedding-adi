@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
 import Modal from "./modal";
@@ -15,7 +14,7 @@ import Amplop from "../components/organisms/Amplop";
 import Privasi from "../components/organisms/Privasi";
 import Footer from "../components/organisms/Footer";
 
-const Home: NextPage = () => {
+export default function Home() {
   const [isPlaying, setIsPlaying] = useState(true);
 
   return (
@@ -40,6 +39,4 @@ const Home: NextPage = () => {
       <Footer />
     </>
   );
-};
-
-export default Home;
+}

@@ -6,10 +6,8 @@ import Img4 from "../../../public/img/foto8.jpg";
 import Img6 from "../../../public/img/foto6.jpg";
 import Img5 from "../../../public/img/foto7.jpg";
 
-import Image from "next/image";
-
 export default function Gallery() {
-  let data = [
+  const data = [
     {
       id: 1,
       imgSrc: Img1,
@@ -35,8 +33,8 @@ export default function Gallery() {
       imgSrc: Img6,
     },
   ];
-  const [model, setModel] = useState(false);
-  const [tempimgSrc, setTempImgSrc] = useState("");
+  const [, setModel] = useState(false);
+  const [, setTempImgSrc] = useState("");
   const getImg = (imgSrc: any) => {
     setTempImgSrc(imgSrc);
     setModel(true);
@@ -44,17 +42,17 @@ export default function Gallery() {
   return (
     <div className="container">
       <div className="gallery">
-        {data.map((item, index) => {
-          return (
-            <div
-              className="pics"
-              key={index}
-              onClick={() => getImg(item.imgSrc)}
-            >
-              <img src={item.imgSrc.src} style={{ width: "100%" }} alt="" />
-            </div>
-          );
-        })}
+        {data.map((item, index) => (
+          <div
+            className="pics"
+            key={index}
+            onClick={() => getImg(item.imgSrc)}
+            role="menuitem"
+            tabIndex={0}
+          >
+            <img src={item.imgSrc.src} style={{ width: "100%" }} alt="" />
+          </div>
+        ))}
       </div>
     </div>
   );

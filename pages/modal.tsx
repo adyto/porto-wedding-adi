@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import Script from "next/script";
 import { FaBookOpen } from "react-icons/fa";
 import Image from "next/image";
@@ -7,7 +7,6 @@ export default function modal({ isPlaying, setIsPlaying }: any) {
   const audioElem = useRef() as React.MutableRefObject<HTMLAudioElement>;
 
   const onPlaySound = () => {
-    console.log(isPlaying);
     setIsPlaying(true);
     if (isPlaying) {
       audioElem.current.play();
@@ -18,7 +17,9 @@ export default function modal({ isPlaying, setIsPlaying }: any) {
   return (
     <>
       <div className="sound">
-        <audio src="/audio/westlife.mp3" ref={audioElem} />
+        <audio src="/audio/westlife.mp3" ref={audioElem}>
+          <track kind="captions" />
+        </audio>
       </div>
       <div
         className="modal fade"

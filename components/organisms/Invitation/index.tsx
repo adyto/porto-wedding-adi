@@ -1,6 +1,6 @@
 import React from "react";
-import bismillah from "../../../public/img/kaligrafi-bismillah-unik.png";
 import Image from "next/image";
+import bismillah from "../../../public/img/kaligrafi-bismillah-unik.png";
 
 export default function Invitation() {
   return (
@@ -15,7 +15,9 @@ export default function Invitation() {
               src={bismillah}
               alt="kaligrafi"
             />
-            <h3 className="text-assalamualaikum">Assalamu'alaikum Wr. Wb.</h3>
+            <h3 className="text-assalamualaikum">
+              Assalamu&#39;alaikum Wr. Wb.
+            </h3>
             <h5>
               Dengan memohon rahmat Allah S.W.T kami bermaksud menyelenggarakan
               pernikahan putra-putri kami:

@@ -1,0 +1,32 @@
+.kali-graf {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 2rem;
+    height: auto;
+    margin-top: -2rem;
+    margin-bottom: -3rem;
+}
+.about__me-image h4 {
+    margin-bottom: 1rem;
+}
+.about__me-image h5 {
+    margin-bottom: -5rem;
+}
+
+@media (max-width: 991px) {
+    .kali-graf {
+        margin-bottom: -2rem;
+    }
+    .about__me-image h5 {
+        margin-bottom: -1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .kali-graf {
+        margin-bottom: -2rem;
+    }
+    .about__me-image h5 {
+        margin-bottom: -1rem;
+    }
+}

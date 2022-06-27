@@ -53,7 +53,6 @@ export default function header({ isPlaying }: any) {
             <BiMessageSquareDetail />
           </a>
         </div>
-        <div className="play-pause"></div>
       </div>
     </>
   );

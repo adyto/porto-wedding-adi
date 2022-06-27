@@ -40,9 +40,9 @@ export default function modal({ isPlaying, setIsPlaying }: any) {
                       height={400}
                     />
                   </div>
-                  <h1 className="nameUndangan fw-semibold text-5xl text-white mt-4  ">
+                  <p className="nameUndangan fw-bold fs-1 text-white mt-4  ">
                     Adi & Dewi Astri
-                  </h1>
+                  </p>
                   <p className="desc1 fw-bold text-lg text-white ">
                     Kepada Bapak/Ibu/Saudara/i
                   </p>

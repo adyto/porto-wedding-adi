@@ -1,0 +1,44 @@
+.calon {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+}
+
+.img-fluid {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 2rem;
+    height: auto;
+}
+
+.footer__socials a {
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
+}
+
+.footer__socials a:hover {
+    background: transparent;
+    color: var(--color-bg);
+    border-color: var(--color-bg);
+}
+
+.justify-content-start h5{
+    font-size: 1.3em;
+}
+
+
+@media (max-width: 991px) {
+    .justify-content-start h5{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .justify-content-start h5{
+        font-size: 1.2em;
+    }
+}

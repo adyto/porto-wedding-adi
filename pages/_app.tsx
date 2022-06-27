@@ -18,6 +18,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <title>The Weeding of Adi & Dewi</title>
+        <meta name="description" content="Weeding Adi & Dewi" />
+        <link rel="icon" href="/favicon.ico" />
         {/* Boostrap CSS */}
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"

@@ -4,47 +4,49 @@ import { BiUser, BiMessageSquareDetail } from "react-icons/bi";
 import { FiBook } from "react-icons/fi";
 import { RiServiceLine } from "react-icons/ri";
 
-export default function header() {
+export default function Navbar() {
   const [activeNav, setActiveNav] = useState("#");
 
   return (
     <div className="container">
-      <div className="nav">
-        <a
-          href="/#"
-          onClick={() => setActiveNav("#")}
-          className={activeNav === "#" ? "active" : ""}
-        >
-          <AiOutlineHome />
-        </a>
-        <a
-          href="#weadingDate"
-          onClick={() => setActiveNav("#weadingDate")}
-          className={activeNav === "#weadingDate" ? "active" : ""}
-        >
-          <BiUser />
-        </a>
-        <a
-          href="#keterangan"
-          onClick={() => setActiveNav("#keterangan")}
-          className={activeNav === "#keterangan" ? "active" : ""}
-        >
-          <FiBook />
-        </a>
-        <a
-          href="#invitation"
-          onClick={() => setActiveNav("#invitation")}
-          className={activeNav === "#invitation" ? "active" : ""}
-        >
-          <RiServiceLine />
-        </a>
-        <a
-          href="#maps"
-          onClick={() => setActiveNav("#maps")}
-          className={activeNav === "#maps" ? "active" : ""}
-        >
-          <BiMessageSquareDetail />
-        </a>
+      <div className="nav position-fixed bottom-5 start-50 translate-middle-x">
+        <div className="d-flex  ">
+          <a
+            href="/#"
+            onClick={() => setActiveNav("#")}
+            className={activeNav === "#" ? "active" : ""}
+          >
+            <AiOutlineHome />
+          </a>
+          <a
+            href="#weadingDate"
+            onClick={() => setActiveNav("#weadingDate")}
+            className={activeNav === "#weadingDate" ? "active" : ""}
+          >
+            <BiUser />
+          </a>
+          <a
+            href="#keterangan"
+            onClick={() => setActiveNav("#keterangan")}
+            className={activeNav === "#keterangan" ? "active" : ""}
+          >
+            <FiBook />
+          </a>
+          <a
+            href="#invitation"
+            onClick={() => setActiveNav("#invitation")}
+            className={activeNav === "#invitation" ? "active" : ""}
+          >
+            <RiServiceLine />
+          </a>
+          <a
+            href="#maps"
+            onClick={() => setActiveNav("#maps")}
+            className={activeNav === "#maps" ? "active" : ""}
+          >
+            <BiMessageSquareDetail />
+          </a>
+        </div>
       </div>
     </div>
   );

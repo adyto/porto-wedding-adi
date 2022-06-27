@@ -63,7 +63,7 @@ export default function countDown() {
               {isExpired ? (
                 <div> yay...</div>
               ) : (
-                < id="clock">
+                <div id="clock">
                   <div className="time-sec d-inline-block">
                     <span className="title">{days}</span> Days
                   </div>

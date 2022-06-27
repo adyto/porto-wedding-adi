@@ -31,8 +31,8 @@ export default function modal({ isPlaying, setIsPlaying }: any) {
           <div className="modal-content">
             <div className="d-flex flex-column">
               <div className="position-absolute top-50 start-50 translate-middle">
-                <div className="modal-body text-center ">
-                  <div className="img-undangan ">
+                <div className="modal-body text-center">
+                  <div className="img-undangan">
                     <Image
                       src="/img/foto7.jpeg"
                       className="rounded-circle "
@@ -41,14 +41,12 @@ export default function modal({ isPlaying, setIsPlaying }: any) {
                       height={400}
                     />
                   </div>
-                  <p className="nameUndangan fw-bold fs-1 text-white mt-4  ">
+                  <p className="nameUndangan fw-bold fs-3 text-white mt-3 mb-3">
                     Adi & Dewi Astri
                   </p>
-                  <p className="desc1 fw-bold text-lg text-white ">
-                    Kepada Bapak/Ibu/Saudara/i
-                  </p>
-                  <p className="desc2 fw-semibold text-lg text-white">
-                    Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.
+                  <p className="desc1 fw-bold text-lg text-white mb-3">
+                    Kepada Bapak/Ibu/Saudara/i Kami Mengundang Anda Untuk Hadir
+                    Di Acara Pernikahan Kami.
                   </p>
                   <div className="descButton d-flex justify-content-center align-items-center rounded-pill px-1 position-relative  mx-sm-1 mx-md-5 mx-lg-5 mx-xl-5 mx-xxl-5">
                     <FaBookOpen />

@@ -19,7 +19,7 @@ export default function countDown() {
       // Time calculations for days, hours, minutes and seconds
       const day = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hour = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
       );
       const minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const second = Math.floor((distance % (1000 * 60)) / 1000);
@@ -64,16 +64,17 @@ export default function countDown() {
                 <div> yay...</div>
               ) : (
                 <div id="clock">
-                  <div className="time-sec">
+                  <div className="time-sec d-inline-block">
                     <span className="title">{days}</span> Days
                   </div>
-                  <div className="time-sec">
+                  <div className="time-sec d-inline-block">
                     <span className="title">{hours}</span> Hours
                   </div>
-                  <div className="time-sec">
+                  <div className="d-block d-md-inline-block"></div>
+                  <div className="time-sec d-inline-block">
                     <span className="title">{minutes}</span> Minutes
                   </div>
-                  <div className="time-sec">
+                  <div className="time-sec d-inline-block">
                     <span className="title">{seconds}</span> Seconds
                   </div>
                 </div>

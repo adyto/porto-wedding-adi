@@ -53,7 +53,7 @@ body {
   font-family: "Playball", cursive;
 }
 
-#invitation .about__me-image .text-assalamualaikum {
+.about__me-image .text-assalamualaikum {
   font-family: "Playball", cursive;
 }
 
@@ -644,7 +644,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
 
 .remaining-time .time-sec {
   position: relative;
-  display: inline-block;
   margin: 0 20px;
   margin-bottom: 30px;
   height: 120px;

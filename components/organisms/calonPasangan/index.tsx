@@ -7,18 +7,20 @@ import foto2 from "../../../public/img/MempelaiPria.jpeg";
 export default function CalonPasangan() {
   return (
     <div className="container calon">
-      <div className="row mt-5">
+      <div className="row mt-1">
         <div className="col">
           <div className="d-flex justify-content-end">
             <Image src={foto2} className="img-fluid" width={200} height={360} />
           </div>
         </div>
         <div className="col">
-          <div className="d-flex justify-content-start">
-            <h5>Adi Hidayatuloh, S.Pd.</h5>
+          <div className="d-flex justify-content-center">
+            <p className="nama-pengantin fw-bold mb-2">
+              Adi Hidayatuloh, S.Pd.
+            </p>
           </div>
-          <div className="d-flex justify-content-start">
-            <h5>Didi Mulyadi dan Yayah Adiah</h5>
+          <div className="d-flex justify-content-start mb-1">
+            <p>Didi Mulyadi dan Yayah Adiah</p>
           </div>
           <div className="d-flex justify-content-start">
             <div className="footer__socials">
@@ -40,11 +42,11 @@ export default function CalonPasangan() {
           </div>
         </div>
         <div className="col">
-          <div className="d-flex justify-content-start">
-            <h5>Dewi Astri, S.E.</h5>
+          <div className="d-flex justify-content-center">
+            <p className="nama-pengantin fw-bold mb-2">Dewi Astri, S.E.</p>
           </div>
-          <div className="d-flex justify-content-start">
-            <h5>Iwa Kartiwa dan Tuti Tohati</h5>
+          <div className="d-flex justify-content-start mb-1">
+            <p>Iwa Kartiwa dan Tuti Tohati</p>
           </div>
           <div className="d-flex justify-content-start">
             <div className="footer__socials">

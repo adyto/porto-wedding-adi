@@ -63,14 +63,14 @@ export default function countDown() {
               {isExpired ? (
                 <div> yay...</div>
               ) : (
-                <div id="clock">
+                < id="clock">
                   <div className="time-sec d-inline-block">
                     <span className="title">{days}</span> Days
                   </div>
                   <div className="time-sec d-inline-block">
                     <span className="title">{hours}</span> Hours
                   </div>
-                  <div className="d-block d-md-inline-block"></div>
+                  <div className="d-block d-md-inline-block" />
                   <div className="time-sec d-inline-block">
                     <span className="title">{minutes}</span> Minutes
                   </div>

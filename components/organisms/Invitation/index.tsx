@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import bismillah from "../../../public/img/kaligrafi-bismillah-unik.png";
 import bismillah2 from "../../../public/icon/Bismillah.svg";
 
 export default function Invitation() {

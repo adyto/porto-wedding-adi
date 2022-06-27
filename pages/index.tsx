@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { useState } from "react";
 import Modal from "./modal";
 import Navbar from "../components/organisms/Navbar";

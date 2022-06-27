@@ -34,7 +34,7 @@ export default function modal({ isPlaying, setIsPlaying }: any) {
                 <div className="modal-body text-center ">
                   <div className="img-undangan ">
                     <Image
-                      src="/img/foto7.jpg"
+                      src="/img/foto7.jpeg"
                       className="rounded-circle "
                       layout="responsive"
                       width={400}

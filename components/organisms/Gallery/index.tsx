@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Img1 from "../../../public/img/foto2.jpg";
-import Img2 from "../../../public/img/foto3.jpg";
-import Img3 from "../../../public/img/foto4.jpg";
-import Img4 from "../../../public/img/foto8.jpg";
-import Img6 from "../../../public/img/foto6.jpg";
-import Img5 from "../../../public/img/foto7.jpg";
+import Img1 from "../../../public/img/foto2.jpeg";
+import Img2 from "../../../public/img/foto3.jpeg";
+import Img3 from "../../../public/img/foto4.jpeg";
+import Img4 from "../../../public/img/foto8.jpeg";
+import Img6 from "../../../public/img/foto6.jpeg";
+import Img5 from "../../../public/img/foto7.jpeg";
 
 export default function Gallery() {
   const data = [

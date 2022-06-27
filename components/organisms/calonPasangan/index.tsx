@@ -1,8 +1,8 @@
 import React from "react";
 import { FiInstagram } from "react-icons/fi";
 import Image from "next/image";
-import foto1 from "../../../public/img/AYXE0057.jpg";
-import foto2 from "../../../public/img/MempelaiPria.jpg";
+import foto1 from "../../../public/img/AYXE0057.jpeg";
+import foto2 from "../../../public/img/MempelaiPria.jpeg";
 
 export default function CalonPasangan() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import bri from "../../../public/img/bri.jpg";
+import bri from "../../../public/img/bri.png";
 import gopay from "../../../public/img/gopay.jpeg";
 import dana from "../../../public/img/dana.jpeg";
 
@@ -20,7 +20,7 @@ export default function Amplop() {
                 <div className="col">
                   <div className="d-flex justify-content-center">
                     <Image
-                      src={gopay.src}
+                      src={gopay}
                       className="img-fluidd"
                       width={250}
                       height={250}

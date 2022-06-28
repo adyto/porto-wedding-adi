@@ -19,23 +19,23 @@ export default function Navbar() {
             <AiOutlineHome />
           </a>
           <a
-            href="#weadingDate"
-            onClick={() => setActiveNav("#weadingDate")}
-            className={activeNav === "#weadingDate" ? "active" : ""}
-          >
-            <BiUser />
-          </a>
-          <a
             href="#keterangan"
             onClick={() => setActiveNav("#keterangan")}
             className={activeNav === "#keterangan" ? "active" : ""}
           >
-            <FiBook />
+            <BiUser />
           </a>
           <a
             href="#invitation"
             onClick={() => setActiveNav("#invitation")}
             className={activeNav === "#invitation" ? "active" : ""}
+          >
+            <FiBook />
+          </a>
+          <a
+            href="#weadingDate"
+            onClick={() => setActiveNav("#weadingDate")}
+            className={activeNav === "#weadingDate" ? "active" : ""}
           >
             <RiServiceLine />
           </a>

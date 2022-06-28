@@ -42,7 +42,7 @@ export default function modal({ isPlaying, setIsPlaying }: any) {
                     />
                   </div>
                   <p className="nameUndangan fw-bold fs-3 text-white mt-3 mb-3">
-                    Adi & Dewi Astri
+                    Adi & Dewi
                   </p>
                   <p className="desc1 fw-bold text-lg text-white mb-3">
                     Kepada Bapak/Ibu/Saudara/i Kami Mengundang Anda Untuk Hadir

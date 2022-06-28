@@ -5,8 +5,8 @@ import { BsClock } from "react-icons/bs";
 
 export default function WeedingLocation() {
   return (
-    <div className="section w-details-area center-text">
-      <div className="container" id="weadingDate">
+    <div className="section w-details-area center-text" id="weadingDate">
+      <div className="container">
         <div className="card">
           <div className="card-body">
             <h3 className="text-akad-nikah ">Akad nikah</h3>

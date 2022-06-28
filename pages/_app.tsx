@@ -12,6 +12,7 @@ import "../styles/gallery.css";
 import "../styles/amplop.css";
 import "../styles/keamanan.css";
 import "../styles/footer.css";
+import "../styles/comment.css";
 import "../styles/untilities.css";
 
 function MyApp({ Component, pageProps }: AppProps) {

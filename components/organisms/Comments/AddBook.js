@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, Alert, InputGroup, Button, ButtonGroup } from "react-bootstrap";
 import BookDataService from "../../../services/book-services";
 
-const AddBook = ({ id, setBookId }) => {
+export default function AddBooks({ id, setBookId }) {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [status, setStatus] = useState("Hadir");
@@ -21,7 +21,6 @@ const AddBook = ({ id, setBookId }) => {
       author,
       status,
     };
-    console.log(newBook);
 
     try {
       if (id !== undefined && id !== "") {
@@ -39,10 +38,9 @@ const AddBook = ({ id, setBookId }) => {
     setTitle("");
     setAuthor("");
   };
-
   return (
     <div className="section w-details-area center-text">
-      <div className="container">
+      <div className="">
         <div className="card">
           <div className="card-bodys">
             {message?.msg && (
@@ -58,8 +56,8 @@ const AddBook = ({ id, setBookId }) => {
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBookTitle">
                 <InputGroup>
-                  <InputGroup.Text id="formBookTitle"></InputGroup.Text>
                   <Form.Control
+                    id="formBookTitle"
                     type="text"
                     placeholder="Nama anda..."
                     value={title}
@@ -70,8 +68,8 @@ const AddBook = ({ id, setBookId }) => {
 
               <Form.Group className="mb-3" controlId="formBookAuthor">
                 <InputGroup>
-                  <InputGroup.Text id="formBookAuthor"></InputGroup.Text>
                   <Form.Control
+                    id="formBookAuthor"
                     type="text"
                     placeholder="Ucapkan Selamat..."
                     value={author}
@@ -83,7 +81,7 @@ const AddBook = ({ id, setBookId }) => {
                 <Button
                   disabled={flag}
                   variant="success"
-                  onClick={(e) => {
+                  onClick={() => {
                     setStatus("Hadir");
                     setFlag(true);
                   }}
@@ -93,7 +91,7 @@ const AddBook = ({ id, setBookId }) => {
                 <Button
                   variant="danger"
                   disabled={!flag}
-                  onClick={(e) => {
+                  onClick={() => {
                     setStatus("Tidak Hadir");
                     setFlag(false);
                   }}
@@ -101,8 +99,12 @@ const AddBook = ({ id, setBookId }) => {
                   Tidak Hadir
                 </Button>
               </ButtonGroup>
-              <div className="d-grid gap-2">
-                <Button variant="primary" type="Submit">
+              <div className="d-grid gap-2 ">
+                <Button
+                  variant="primary"
+                  type="Submit"
+                  className="btn-kirim-undangan"
+                >
                   Kirim
                 </Button>
               </div>
@@ -112,6 +114,4 @@ const AddBook = ({ id, setBookId }) => {
       </div>
     </div>
   );
-};
-
-export default AddBook;
+}

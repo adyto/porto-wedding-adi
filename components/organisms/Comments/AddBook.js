@@ -39,79 +39,85 @@ export default function AddBooks({ id, setBookId }) {
     setAuthor("");
   };
   return (
-    <div className="section w-details-area center-text">
-      <div className="">
-        <div className="card">
-          <div className="card-bodys">
-            {message?.msg && (
-              <Alert
-                variant={message?.error ? "danger" : "success"}
-                dismissible
-                onClose={() => setMessage("")}
-              >
-                {message?.msg}
-              </Alert>
-            )}
+    <>
+      <div className="ucapan mt-1">
+        <h1 className="fw-bold fs-1">Ucapkan Sesuatu</h1>
+        <h2 className="mt-2 fs-6">Berikan Ucapan & Doa Restu</h2>
+      </div>
+      <div className="section w-details-area center-text">
+        <div className="">
+          <div className="card">
+            <div className="card-bodys">
+              {message?.msg && (
+                <Alert
+                  variant={message?.error ? "danger" : "success"}
+                  dismissible
+                  onClose={() => setMessage("")}
+                >
+                  {message?.msg}
+                </Alert>
+              )}
 
-            <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-3" controlId="formBookTitle">
-                <InputGroup>
-                  <Form.Control
-                    id="formBookTitle"
-                    type="text"
-                    placeholder="Nama anda..."
-                    value={title}
-                    onChange={(e) => setTitle(e.target.value)}
-                  />
-                </InputGroup>
-              </Form.Group>
+              <Form onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="formBookTitle">
+                  <InputGroup>
+                    <Form.Control
+                      type="text"
+                      placeholder="Nama anda..."
+                      value={title}
+                      onChange={(e) => setTitle(e.target.value)}
+                    />
+                  </InputGroup>
+                </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBookAuthor">
-                <InputGroup>
-                  <Form.Control
-                    id="formBookAuthor"
-                    type="text"
-                    placeholder="Ucapkan Selamat..."
-                    value={author}
-                    onChange={(e) => setAuthor(e.target.value)}
-                  />
-                </InputGroup>
-              </Form.Group>
-              <ButtonGroup aria-label="Basic example" className="mb-3">
-                <Button
-                  disabled={flag}
-                  variant="success"
-                  onClick={() => {
-                    setStatus("Hadir");
-                    setFlag(true);
-                  }}
-                >
-                  Hadir
-                </Button>
-                <Button
-                  variant="danger"
-                  disabled={!flag}
-                  onClick={() => {
-                    setStatus("Tidak Hadir");
-                    setFlag(false);
-                  }}
-                >
-                  Tidak Hadir
-                </Button>
-              </ButtonGroup>
-              <div className="d-grid gap-2 ">
-                <Button
-                  variant="primary"
-                  type="Submit"
-                  className="btn-kirim-undangan"
-                >
-                  Kirim
-                </Button>
-              </div>
-            </Form>
+                <Form.Group className="mb-3" controlId="formBookAuthor">
+                  <InputGroup>
+                    <Form.Control
+                      as="textarea"
+                      rows={3}
+                      id="formBookAuthor"
+                      placeholder="Ucapkan Selamat..."
+                      value={author}
+                      onChange={(e) => setAuthor(e.target.value)}
+                    />
+                  </InputGroup>
+                </Form.Group>
+                <ButtonGroup aria-label="Basic example" className="mb-3">
+                  <Button
+                    disabled={flag}
+                    variant="success"
+                    onClick={() => {
+                      setStatus("Hadir");
+                      setFlag(true);
+                    }}
+                  >
+                    Hadir
+                  </Button>
+                  <Button
+                    variant="danger"
+                    disabled={!flag}
+                    onClick={() => {
+                      setStatus("Tidak Hadir");
+                      setFlag(false);
+                    }}
+                  >
+                    Tidak Hadir
+                  </Button>
+                </ButtonGroup>
+                <div className="d-grid gap-2 ">
+                  <Button
+                    variant="primary"
+                    type="Submit"
+                    className="btn-kirim-undangan"
+                  >
+                    Kirim
+                  </Button>
+                </div>
+              </Form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

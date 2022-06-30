@@ -59,7 +59,7 @@ export default function AddBooks({ id, setBookId }) {
               )}
 
               <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBookTitle">
+                <Form.Group className="mb-3">
                   <InputGroup>
                     <Form.Control
                       type="text"
@@ -70,7 +70,7 @@ export default function AddBooks({ id, setBookId }) {
                   </InputGroup>
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBookAuthor">
+                <Form.Group className="mb-3">
                   <InputGroup>
                     <Form.Control
                       as="textarea"
@@ -109,6 +109,7 @@ export default function AddBooks({ id, setBookId }) {
                     variant="primary"
                     type="Submit"
                     className="btn-kirim-undangan"
+                    // onClick={getBooks}
                   >
                     Kirim
                   </Button>

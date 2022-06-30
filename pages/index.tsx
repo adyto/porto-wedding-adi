@@ -37,7 +37,7 @@ export default function Home() {
       <Amplop />
       <Privasi />
 
-      <Container style={{ width: "400px" }}>
+      <Container>
         <Row>
           <Col>
             <AddBook id={bookId} setBookId={setBookId} />
